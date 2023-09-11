@@ -1,0 +1,14 @@
+.card_columns{
+    padding: 10px;
+    margin: 20px;
+    max-width: 10px;
+    background-color: aquamarine;
+}
+.card {
+    width: 18rem;
+}
+
+.card:hover {
+    transform: translate3D(0,-1px,0) scale(1.03); 
+    background-color: black;
+}
