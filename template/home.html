@@ -17,18 +17,17 @@
     </form>
 </centre>
 </div>
-<div class="card-columns" style="padding: 10px; margin: 20px;">
-{% for object in object_list %}
-<a href="{{object.url}}">
-<div class="card" style="width: 18rem; border-radius: 10%;" >
-<img class="card-img-top" src = "{{ object.image }}" style="border-radius: 1em 1em 0 0 ; " >
-<div class="card-body">
-<h5 class="card-title"><div class="card-body">
-  <h5 class="card-title">{{object.title}}</h5>
-</div></h5>
-</div>
-</div> </a>
-{% endfor %}
+<div class="card-columns">
+  {% for object in object_list %}
+    <a href="{{ object.url }}" class="card-link">
+      <div class="card">
+        <img class="card-img-top" src="{{ object.image }}" alt="{{ object.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ object.title }}</h5>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
 </div>
 </div>
 <script
